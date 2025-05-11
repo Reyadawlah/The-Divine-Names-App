@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct The_Divine_Names_2App: App {
+    @StateObject private var viewModel = AppViewModel()
+    @StateObject private var tutorialManager = TutorialManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
+                .environmentObject(tutorialManager)
         }
     }
 }

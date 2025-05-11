@@ -23,7 +23,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FCBFB7632DB94C4800D69076 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FCBFB74A2DB94C4500D69076 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FCBFB74C2DB94C4500D69076 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		FCD1F5222D7DEF6D009087B3 /* The Divine Names 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Divine Names 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD1F5322D7DEF6F009087B3 /* The Divine Names 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Divine Names 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD1F53C2D7DEF6F009087B3 /* The Divine Names 2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Divine Names 2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,12 +87,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FCBFB7492DB94C4500D69076 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCBFB74A2DB94C4500D69076 /* WidgetKit.framework */,
+				FCBFB74C2DB94C4500D69076 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FCD1F5192D7DEF6D009087B3 = {
 			isa = PBXGroup;
 			children = (
 				FCD1F5242D7DEF6D009087B3 /* The Divine Names 2 */,
 				FCD1F5352D7DEF6F009087B3 /* The Divine Names 2Tests */,
 				FCD1F53F2D7DEF6F009087B3 /* The Divine Names 2UITests */,
+				FCBFB7492DB94C4500D69076 /* Frameworks */,
 				FCD1F5232D7DEF6D009087B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +127,7 @@
 				FCD1F51E2D7DEF6D009087B3 /* Sources */,
 				FCD1F51F2D7DEF6D009087B3 /* Frameworks */,
 				FCD1F5202D7DEF6D009087B3 /* Resources */,
+				FCBFB7632DB94C4800D69076 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -170,7 +196,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
+				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					FCD1F5212D7DEF6D009087B3 = {
@@ -404,12 +430,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rayoflight.The-Divine-Names-2";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rayoflight.The-Divine-Names";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -433,12 +460,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rayoflight.The-Divine-Names-2";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rayoflight.The-Divine-Names";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
